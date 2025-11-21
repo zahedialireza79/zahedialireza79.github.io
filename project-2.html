@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 2</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Soft Robotics Project</title>
+    <meta name="description" content="Case study of soft robotics project" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -16,19 +16,21 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/png/Alireza.png"
+              alt="Logo"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Alireza</span>
         </div>
+
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
@@ -46,6 +48,7 @@
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
+
           <div class="header__main-ham-menu-cont">
             <img
               src="./assets/svg/ham-menu.svg"
@@ -60,46 +63,41 @@
           </div>
         </div>
       </div>
+
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
+            <li class="header__sm-menu-link"><a href="./index.html"> Home </a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#about"> About </a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#projects"> Projects </a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#contact"> Contact </a></li>
           </ul>
         </div>
       </div>
     </header>
+
+    <!-- HERO -->
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 2</h1>
+        <h1 class="heading-primary">Soft Robotics Teleoperation System</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            A haptically controlled soft robotic system designed for medical manipulation,
+            featuring real-time control, sensing, and cross-language software integration.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="#" class="btn btn--bg" target="_blank">Live Demo</a>
         </div>
       </div>
     </section>
+
+    <!-- PROJECT DETAILS -->
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+
+          <!-- MAIN PROJECT IMAGE -->
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/project-mockup-example.jpeg"
@@ -107,50 +105,90 @@
               class="project-details__showcase-img"
             />
           </div>
+
+          <!-- MEDICAL ROBOTICS IMAGE -->
+          <div class="project-details__medical-img">
+            <img
+              src="/assets/SoftRobot/SoftSurgucalRobot.png"
+              alt="Medical Robotics Catheter Navigation Illustration"
+              style="width:100%; border-radius:12px; margin:2rem 0;"
+            />
+          </div>
+
+          <!-- PROJECT DESCRIPTION -->
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
+
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                Soft robotics is an emerging area of medical robotics that uses
+                compliant, deformable materials to enable safe navigation inside
+                delicate biological environments. Because soft actuators bend,
+                stretch, and distribute force naturally, they are ideal for minimally
+                invasive procedures such as catheter navigation and endovascular
+                intervention.
               </p>
+
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                In this project, I developed a haptically controlled soft robotic
+                system for medical manipulation research. I integrated two haptic
+                devices with a pneumatically actuated soft robot, allowing operators
+                to control the system intuitively with real-time force feedback.
+              </p>
+
+              <p class="project-details__desc-para">
+                <strong>Key Technical Achievements:</strong><br>
+                • Integrated two haptic interfaces with the soft robot using C#,
+                  enabling smooth bilateral communication.<br>
+                • Interfaced with the company’s C++ API and adapted it for
+                  custom control — demonstrating cross-language synchronization
+                  (C# ↔ C++).<br>
+                • Implemented real-time teleoperation with low-latency feedback.<br>
+                • Developed a robust pipeline synchronizing haptic input, soft
+                  actuator response, and NDI sensor tracking.
+              </p>
+
+              <p class="project-details__desc-para">
+                A related publication from this project was presented at the HAMLYN Symposium:  
+                <a
+                  href="https://www.researchgate.net/publication/391608612_Simultaneous_Forward_and_Inverse_Kinematic_Learning_of_Soft_Robots_Using_Bi-Level_Neural_Encoding"
+                  target="_blank"
+                >
+                  Simultaneous Forward and Inverse Kinematic Learning of Soft Robots Using Bi-Level Neural Encoding
+                </a>.
               </p>
             </div>
+
+            <!-- VIDEO PLACEHOLDER -->
+            <div class="project-details__video" style="margin: 2rem 0;">
+              <!-- Replace the source with your own video -->
+              <video width="100%" controls>
+                <source src="./assets/videos/my-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <!-- TOOLS USED -->
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">C#</div>
+                <div class="skills__skill">NDI Sensors</div>
+                <div class="skills__skill">Soft Actuators</div>
+                <div class="skills__skill">Teleoperation</div>
+                <div class="skills__skill">Haptics</div>
+                <div class="skills__skill">Control Systems</div>
               </div>
             </div>
+
+            <!-- LINKS -->
             <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
               <a
                 href="#"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
+                >Live Demo</a
               >
               <a
                 href="#"
@@ -163,6 +201,8 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -170,61 +210,28 @@
             <h2 class="heading heading-sm main-footer__heading-sm">
               <span>Social</span>
             </h2>
+
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
+              <a href="#" target="_blank"><img class="main-footer__icon" src="./assets/png/linkedin-ico.png" /></a>
+              <a href="#" target="_blank"><img class="main-footer__icon" src="./assets/png/github-ico.png" /></a>
+              <a href="#" target="_blank"><img class="main-footer__icon" src="./assets/png/twitter-ico.png" /></a>
             </div>
           </div>
+
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Alireza</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Robotics • Medical Systems • Teleoperation • Soft Robotics
             </p>
           </div>
         </div>
 
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+          &copy; 2025. Made by Alireza.
         </div>
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
