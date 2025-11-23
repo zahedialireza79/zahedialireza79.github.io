@@ -176,16 +176,16 @@ textarea {
   }
   
   .btn--theme-inv {
-    color: #0062b9;
-    background: #fff;
+    color: #000;
+    background: #0062b9;
     border: 2px solid #0062b9;
     box-shadow: none;
     padding: calc(1.2rem - 2px) calc(4.5rem - 2px);
   }
   
   .btn--theme-inv:hover {
-    background: #f0f7ff; /* soft blue hint */
-    border-color: #005faa;
+    background: #0057a1; /* slight darken */
+    border-color: #0057a1;
   }
 .sec-pad {
   padding: 12rem 0; }
