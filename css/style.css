@@ -66,7 +66,9 @@ textarea {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
@@ -175,7 +177,8 @@ textarea {
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
-  line-height: 1.6; }
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
   @media only screen and (max-width: 37.5em) {
     .text-primary {
       font-size: 2rem; } }
@@ -189,10 +192,12 @@ textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
-    min-height: 40rem;
-    max-height: 120rem;
+    height: 100vh;
+    min-height: 50rem;
+    max-height: 100vh;
     position: relative;
+    overflow: hidden;
+    width: 100%;
   }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
@@ -201,9 +206,13 @@ textarea {
   .home-hero__socials {
     position: absolute;
     top: 50%;
-    border: 2px solid #eee;
-    border-left: 2px solid #eee;
-    transform: translateY(-50%); }
+    left: 0;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transform: translateY(-50%);
+    z-index: 10; }
     @media only screen and (max-width: 56.25em) {
       .home-hero__socials {
         display: none; } }
@@ -221,14 +230,15 @@ textarea {
     width: 100%;
     display: block;
     padding: 1.2rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
     transition: background .3s; }
     .home-hero__social-icon-link:hover {
-      background: rgba(255, 255, 255, 0.1); }
+      background: rgba(255, 255, 255, 0.2); }
     .home-hero__social-icon-link--bd-none {
       border-bottom: 0; }
   .home-hero__social-icon {
-    width: 100%; }
+    width: 100%;
+    filter: brightness(0) invert(1); }
   .home-hero__content {
     position: absolute;
     top: 50%;
