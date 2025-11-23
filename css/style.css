@@ -259,7 +259,8 @@ textarea {
       border-bottom: 0; }
   .home-hero__social-icon {
     width: 100%;
-    filter: invert(31%) sepia(90%) saturate(1500%) hue-rotate(190deg); }
+    filter: brightness(0) saturate(100%) invert(28%) sepia(100%) saturate(3000%) hue-rotate(200deg) brightness(0.85);
+    /* Ensures icons match the blue theme color (#0062b9) */ }
   .home-hero__content {
     position: absolute;
     top: 50%;
@@ -545,10 +546,10 @@ textarea {
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #0062b9;
+    color: #000;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0057a1; }
+      color: #333; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
@@ -581,13 +582,13 @@ textarea {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #0062b9;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #0057a1; }
+      color: #333; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -626,7 +627,7 @@ textarea {
     text-decoration: none;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
-    color: #0062b9;
+    color: #000;
     text-align: right;
     border-bottom: 1px solid #eee;
     font-weight: 700;
@@ -634,7 +635,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #0057a1; }
+      color: #333; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
