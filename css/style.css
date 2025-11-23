@@ -185,11 +185,10 @@ textarea {
 
   .home-hero {
     color: #000; 
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
-      url("../assets/main_image.png");
+    background-image: url("../assets/main_image.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 60vh;
     min-height: 40rem;
     max-height: 120rem;
