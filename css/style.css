@@ -260,7 +260,7 @@ textarea {
       border-bottom: 0; }
   .home-hero__social-icon {
     width: 100%;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) saturate(100%) invert(100%);
     /* Makes icons white on blue background */ }
   .home-hero__content {
     position: absolute;
