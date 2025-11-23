@@ -67,8 +67,8 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  color: #0062b9;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); }
+  color: #000;
+  text-shadow: none}
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
@@ -139,8 +139,8 @@ textarea {
   width: 92%; }
 
   .btn {
-    background: #fff;
-    color: #333;
+    background: #0062b9;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     display: inline-block;
@@ -194,7 +194,7 @@ textarea {
       padding: 8rem 0; } }
 
 .text-primary {
-  color: #0062b9;
+  color: #000;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -208,17 +208,17 @@ textarea {
   display: none; }
 
   .home-hero {
-    color: #0062b9; 
+    color: #000; 
     background-image: url("../assets/main_image.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  
     height: 100vh;
     min-height: 50rem;
-    max-height: 100vh;
     position: relative;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
   }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
@@ -259,7 +259,7 @@ textarea {
       border-bottom: 0; }
   .home-hero__social-icon {
     width: 100%;
-    filter: brightness(0) invert(0); }
+    filter: invert(31%) sepia(90%) saturate(1500%) hue-rotate(190deg); }
   .home-hero__content {
     position: absolute;
     top: 50%;
@@ -545,10 +545,10 @@ textarea {
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #333;
+    color: #0062b9;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0062b9; }
+      color: #0057a1; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
@@ -581,13 +581,13 @@ textarea {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #333;
+    color: #0062b9;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #0062b9; }
+      color: #0057a1; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -626,7 +626,7 @@ textarea {
     text-decoration: none;
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
-    color: #333;
+    color: #0062b9;
     text-align: right;
     border-bottom: 1px solid #eee;
     font-weight: 700;
@@ -634,7 +634,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #0062b9; }
+      color: #0057a1; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
