@@ -138,34 +138,55 @@ textarea {
   margin: auto;
   width: 92%; }
 
-.btn {
-  background: #fff;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: inline-block;
-  font-weight: 700;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  .btn {
+    background: #fff;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+  }
+  
   .btn:hover {
-    transform: translateY(-3px); }
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  }
+  
   .btn--bg {
-    padding: 1.5rem 8rem;
-    font-size: 2rem; }
+    padding: 1.3rem 7rem;
+    font-size: 1.9rem;
+  }
+  
   .btn--med {
-    padding: 1.5rem 5rem;
-    font-size: 1.6rem; }
+    padding: 1.2rem 4.5rem;
+    font-size: 1.5rem;
+  }
+  
   .btn--theme {
     background: #0062b9;
-    color: #fff; }
+    color: #fff;
+  }
+  
+  .btn--theme:hover {
+    background: #0057a1; /* slight darken */
+  }
+  
   .btn--theme-inv {
     color: #0062b9;
     background: #fff;
     border: 2px solid #0062b9;
     box-shadow: none;
-    padding: calc(1.5rem - 2px) calc(5rem - 2px); }
-
+    padding: calc(1.2rem - 2px) calc(4.5rem - 2px);
+  }
+  
+  .btn--theme-inv:hover {
+    background: #f0f7ff; /* soft blue hint */
+    border-color: #005faa;
+  }
 .sec-pad {
   padding: 12rem 0; }
   @media only screen and (max-width: 56.25em) {
@@ -173,7 +194,7 @@ textarea {
       padding: 8rem 0; } }
 
 .text-primary {
-  color: #fff;
+  color: #000;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -187,7 +208,7 @@ textarea {
   display: none; }
 
   .home-hero {
-    color: #000; 
+    color: #fff; 
     background-image: url("../assets/main_image.png");
     background-size: cover;
     background-position: center;
@@ -238,7 +259,7 @@ textarea {
       border-bottom: 0; }
   .home-hero__social-icon {
     width: 100%;
-    filter: brightness(0) invert(1); }
+    filter: brightness(0) invert(0); }
   .home-hero__content {
     position: absolute;
     top: 50%;
@@ -510,7 +531,6 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
   background: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
