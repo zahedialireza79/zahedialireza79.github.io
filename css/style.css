@@ -210,7 +210,7 @@ textarea {
   .home-hero {
     color: #000; 
     background-image: url("../assets/main_image.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   
@@ -230,7 +230,7 @@ textarea {
     left: 0;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-left: 2px solid rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.3);
+    background: #0062b9;
     backdrop-filter: blur(5px);
     transform: translateY(-50%);
     z-index: 10; }
@@ -260,7 +260,7 @@ textarea {
       border-bottom: 0; }
   .home-hero__social-icon {
     width: 100%;
-    filter: brightness(0) saturate(100%) invert(100%);
+    filter: brightness(0) invert(1);
     /* Makes icons white on blue background */ }
   .home-hero__content {
     position: absolute;
