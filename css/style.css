@@ -67,8 +67,8 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  color: #0062b9;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
@@ -194,12 +194,12 @@ textarea {
       padding: 8rem 0; } }
 
 .text-primary {
-  color: #000;
+  color: #0062b9;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
   line-height: 1.6;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); }
   @media only screen and (max-width: 37.5em) {
     .text-primary {
       font-size: 2rem; } }
@@ -208,9 +208,9 @@ textarea {
   display: none; }
 
   .home-hero {
-    color: #fff; 
+    color: #0062b9; 
     background-image: url("../assets/main_image.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
