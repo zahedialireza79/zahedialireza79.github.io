@@ -210,7 +210,7 @@ textarea {
   .home-hero {
     color: #000; 
     background-image: url("../assets/main_image.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   
