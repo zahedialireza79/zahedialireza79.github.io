@@ -331,13 +331,14 @@ textarea {
   .projects__row-img {
     width: 100%;
     display: block;
-    object-fit: cover;
-    max-height: 35rem;
+    object-fit: contain;
+    max-width: 45rem;
     height: auto;
+    margin: 0 auto;
   }
   @media only screen and (max-width: 56.25em) {
     .projects__row-img {
-      max-height: 25rem;
+      max-width: 100%;
     }
   }
   .projects__row-content {
