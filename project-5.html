@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hand Gesture Teleoperation</title>
+  <meta name="description" content="Case study of hand gesture teleoperation system for robotic arm control">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/png/Alireza.png" alt="Logo" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">Alireza Zahedi</span>
+      </div>
+
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper"><a href="./index.html" class="header__link">Home</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projects</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link">Contact</a></li>
+        </ul>
+
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">Hand Gesture Teleoperation</h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          A ROS 2 system for controlling a robot arm through real-time
+          hand gesture recognition using MediaPipe and a standard webcam.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+
+        <div class="project-details__content-main">
+
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Project Overview</h3>
+
+            <p class="project-details__desc-para">
+              This project is a ROS 2–based teleoperation system that allows an operator
+              to control a robot arm using only hand gestures captured through a webcam.
+              The system uses Google's MediaPipe framework for real-time hand tracking
+              and translates natural hand movements into joint-level robot commands —
+              no specialized hardware or wearable sensors required.
+            </p>
+
+            <p class="project-details__desc-para">
+              The architecture is built around two ROS 2 nodes working in tandem. A gesture
+              detection node reads the webcam feed, identifies left and right hands, and
+              publishes structured gesture commands to ROS topics. A separate arm controller
+              node subscribes to these commands and drives the robot's joints accordingly.
+              The left hand selects which joint to control by raising a specific number of
+              fingers, while the right hand issues directional commands through a fist
+              gesture combined with vertical motion.
+            </p>
+
+            <p class="project-details__desc-para">
+              The system was designed with modularity in mind — the gesture recognition
+              pipeline, finger counting logic, and motor control interface are separated
+              into independent Python modules, making it straightforward to swap in different
+              robot backends or extend the gesture vocabulary. A calibration routine allows
+              the operator to set a neutral reference point, and all key parameters
+              (detection confidence, dead-zone thresholds, step sizes) are configurable
+              through a YAML file without modifying any code.
+            </p>
+
+            <p class="project-details__desc-para">
+              <strong>Key Technical Achievements:</strong><br />
+              • Built a modular ROS 2 package with separate gesture detection and arm
+              control nodes communicating over standard ROS topics.<br />
+              • Integrated MediaPipe hand tracking for real-time finger counting and
+              directional gesture recognition from a single webcam.<br />
+              • Designed a two-hand control scheme: left hand for joint selection,
+              right hand for motion commands — enabling intuitive multi-joint control.<br />
+              • Implemented runtime calibration and YAML-based parameter tuning for
+              deployment flexibility across different setups.
+            </p>
+
+            <p class="project-details__desc-para">
+              The source code is available on GitHub:
+              <a href="https://github.com/zahedialireza79/hand_teleop" target="_blank" rel="noopener">
+                github.com/zahedialireza79/hand_teleop
+              </a>.
+            </p>
+          </div>
+
+          <!-- IMAGE PLACEHOLDER — replace src with your own screenshot or demo image -->
+          <div class="project-details__showcase-img-cont" style="width:100%; margin-top:4rem;">
+            <img
+              src="./assets/HandTeleop/hand_teleop.png"
+              alt="Hand gesture teleoperation system diagram"
+              class="project-details__showcase-img"
+              style="width:100%; border-radius:10px;"
+            />
+            <p class="projects__row-content-desc" style="margin-top:1.2rem; font-size:1.5rem;">
+              <!-- Add a caption here if needed, e.g.: "System architecture overview" -->
+            </p>
+          </div>
+
+          <!--
+            VIDEO ALTERNATIVE — uncomment and use this block instead of the image above
+            if you have a demo video:
+
+          <div class="project-details__video-wrapper" style="width:100%; margin-top:4rem;">
+            <video
+              controls
+              playsinline
+              style="width:100%; border-radius:10px; max-height:400px; background:#000;"
+            >
+              <source src="./assets/HandTeleop/hand_teleop_demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          -->
+
+          <!-- Skills -->
+          <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tools Used</h3>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">ROS 2</div>
+              <div class="skills__skill">MediaPipe</div>
+              <div class="skills__skill">OpenCV</div>
+              <div class="skills__skill">Computer Vision</div>
+              <div class="skills__skill">Teleoperation</div>
+              <div class="skills__skill">Gesture Recognition</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
+
+          <div class="main-footer__social-cont">
+            <a href="https://www.linkedin.com/in/alirezazahedi79/" target="_blank">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" />
+            </a>
+            <a href="https://github.com/zahedialireza79" target="_blank">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Alireza Zahedi</h4>
+          <p class="main-footer__short-desc">
+            Robotics Engineer specializing in intelligent control and robotic systems.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="main-footer__lower">
+        © 2025 — Alireza Zahedi
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
