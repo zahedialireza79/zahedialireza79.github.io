@@ -117,16 +117,20 @@
 
           </div>
 
-          <!-- IMAGE PLACEHOLDER — replace src with your own screenshot or demo image -->
-          <div class="project-details__showcase-img-cont" style="width:100%; margin-top:4rem;">
-            <img
-              src="../assets/Videos/teleop/teleop.mp4"
-              alt="Hand gesture teleoperation demo"
-              class="project-details__showcase-img"
-              style="width:100%; border-radius:10px;"
-            />
+
+          <!-- Video -->
+          <div class="project-details__video-wrapper" style="width:100%; margin-top:4rem;">
+            <video
+              controls
+              playsinline
+              style="width:100%; border-radius:10px; max-height:400px; background:#000;"
+            >
+              <source src="../assets/Videos/teleop/teleop.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
             <p class="projects__row-content-desc" style="margin-top:1.2rem; font-size:1.5rem;">
-              <!-- Add a caption here if needed, e.g.: "System architecture overview" -->
+              Hand gesture teleoperation demo.
             </p>
           </div>
 
