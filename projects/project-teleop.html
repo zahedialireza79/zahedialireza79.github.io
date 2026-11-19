@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Hand Gesture Teleoperation</title>
+  <title>Hand Gesture Robotic Arm Teleoperation</title>
   <meta name="description" content="Case study of hand gesture teleoperation system for robotic arm control">
   <link rel="stylesheet" href="../css/style.css" />
 
@@ -18,33 +18,34 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__content">
-      <div class="header__logo-container">
+      <a href="../index.html" class="header__logo-container">
         <div class="header__logo-img-cont">
           <img src="../assets/png/Alireza.png" alt="Logo" class="header__logo-img" />
         </div>
         <span class="header__logo-sub">Alireza Zahedi</span>
-      </div>
+      </a>
 
       <div class="header__main">
         <ul class="header__links">
           <li class="header__link-wrapper"><a href="../index.html" class="header__link">Home</a></li>
           <li class="header__link-wrapper"><a href="../index.html#about" class="header__link">About</a></li>
           <li class="header__link-wrapper"><a href="../index.html#projects" class="header__link">Projects</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#cad" class="header__link">CAD Models</a></li>
           <li class="header__link-wrapper"><a href="../index.html#contact" class="header__link">Contact</a></li>
         </ul>
 
-        <div class="header__main-ham-menu-cont">
-          <img src="../assets/svg/ham-menu.svg" class="header__main-ham-menu" />
-          <img src="../assets/svg/ham-menu-close.svg" class="header__main-ham-menu-close d-none" />
-        </div>
+        <button type="button" class="header__main-ham-menu-cont" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+          <img src="../assets/svg/ham-menu.svg" class="header__main-ham-menu" alt="" aria-hidden="true" />
+          <img src="../assets/svg/ham-menu-close.svg" class="header__main-ham-menu-close d-none" alt="" aria-hidden="true" />
+        </button>
       </div>
     </div>
-  </header>
+  <div class="header__sm-menu" id="mobile-menu"><div class="header__sm-menu-content"><ul class="header__sm-menu-links"><li class="header__sm-menu-link"><a href="../index.html">Home</a></li><li class="header__sm-menu-link"><a href="../index.html#about">About</a></li><li class="header__sm-menu-link"><a href="../index.html#projects">Projects</a></li><li class="header__sm-menu-link"><a href="../index.html#cad">CAD Models</a></li><li class="header__sm-menu-link"><a href="../index.html#contact">Contact</a></li></ul></div></div></header>
 
   <!-- HERO -->
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Hand Gesture Teleoperation</h1>
+      <h1 class="heading-primary">Hand Gesture Robotic Arm Teleoperation</h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
           A ROS 2 system for controlling a robot arm through real-time
@@ -120,7 +121,7 @@
 
           <!-- Video -->
           <div class="project-details__video-wrapper" style="width:100%; margin-top:4rem;">
-            <video
+            <video preload="none" poster="../assets/Videos/teleop/poster.jpg"
               controls
               playsinline
               style="width:100%; border-radius:10px; max-height:400px; background:#000;"
@@ -133,22 +134,6 @@
               Hand gesture teleoperation demo.
             </p>
           </div>
-
-          <!--
-            VIDEO ALTERNATIVE — uncomment and use this block instead of the image above
-            if you have a demo video:
-
-          <div class="project-details__video-wrapper" style="width:100%; margin-top:4rem;">
-            <video
-              controls
-              playsinline
-              style="width:100%; border-radius:10px; max-height:400px; background:#000;"
-            >
-              <source src="../assets/HandTeleop/hand_teleop_demo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          -->
 
           <!-- Skills -->
           <div class="project-details__tools-used">
@@ -178,11 +163,11 @@
           <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
 
           <div class="main-footer__social-cont">
-            <a href="https://www.linkedin.com/in/alirezazahedi79/" target="_blank">
-              <img class="main-footer__icon" src="../assets/png/linkedin-ico.png" />
+            <a href="https://www.linkedin.com/in/alirezazahedi79/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img class="main-footer__icon" src="../assets/png/linkedin-ico.png" alt="" />
             </a>
-            <a href="https://github.com/zahedialireza79" target="_blank">
-              <img class="main-footer__icon" src="../assets/png/github-ico.png" />
+            <a href="https://github.com/zahedialireza79" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img class="main-footer__icon" src="../assets/png/github-ico.png" alt="" />
             </a>
           </div>
         </div>

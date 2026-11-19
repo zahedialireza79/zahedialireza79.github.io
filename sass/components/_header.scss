@@ -146,3 +146,6 @@
     border-bottom: 0;
   }
 }
+
+.header__main-ham-menu-cont { border: 0; background: transparent; cursor: pointer; }
+.header__main-ham-menu-cont:focus-visible, .header a:focus-visible, .cad a:focus-visible { outline: 3px solid #00a6cf; outline-offset: 3px; }

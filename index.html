@@ -30,7 +30,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__content">
-        <div class="header__logo-container">
+        <a href="#home" class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
               src="./assets/png/Alireza.png"
@@ -39,30 +39,31 @@
             />
           </div>
           <span class="header__logo-sub">Alireza Zahedi</span>
-        </div>
+        </a>
 
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper"><a href="#home" class="header__link">Home</a></li>
             <li class="header__link-wrapper"><a href="#about" class="header__link">About</a></li>
             <li class="header__link-wrapper"><a href="#projects" class="header__link">Projects</a></li>
-            <li class="header__link-wrapper"><a href="#" class="header__link">CAD Models</a></li>
+            <li class="header__link-wrapper"><a href="#cad" class="header__link">CAD Models</a></li>
             <li class="header__link-wrapper"><a href="#contact" class="header__link">Contact</a></li>
           </ul>
 
-          <div class="header__main-ham-menu-cont">
-            <img src="./assets/svg/ham-menu.svg" class="header__main-ham-menu" />
-            <img src="./assets/svg/ham-menu-close.svg" class="header__main-ham-menu-close d-none" />
-          </div>
+          <button type="button" class="header__main-ham-menu-cont" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+            <img src="./assets/svg/ham-menu.svg" class="header__main-ham-menu" alt="" aria-hidden="true" />
+            <img src="./assets/svg/ham-menu-close.svg" class="header__main-ham-menu-close d-none" alt="" aria-hidden="true" />
+          </button>
         </div>
       </div>
 
-      <div class="header__sm-menu">
+      <div class="header__sm-menu" id="mobile-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link"><a href="#home">Home</a></li>
             <li class="header__sm-menu-link"><a href="#about">About</a></li>
             <li class="header__sm-menu-link"><a href="#projects">Projects</a></li>
+            <li class="header__sm-menu-link"><a href="#cad">CAD Models</a></li>
             <li class="header__sm-menu-link"><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -93,9 +94,9 @@
           <a 
             href="https://www.linkedin.com/in/alirezazahedi79/"
             class="home-hero__social-icon-link"
-            target="_blank"
-          >
-            <img src="./assets/png/linkedin-ico.png" class="home-hero__social-icon" />
+            target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn">
+            <img src="./assets/png/linkedin-ico.png" class="home-hero__social-icon" alt="" />
           </a>
         </div>
       
@@ -103,9 +104,9 @@
           <a 
             href="https://github.com/zahedialireza79"
             class="home-hero__social-icon-link"
-            target="_blank"
-          >
-            <img src="./assets/png/github-ico.png" class="home-hero__social-icon" />
+            target="_blank" rel="noopener noreferrer"
+           aria-label="GitHub">
+            <img src="./assets/png/github-ico.png" class="home-hero__social-icon" alt="" />
           </a>
         </div>
       </div>
@@ -171,7 +172,6 @@
               
               <div class="skills__skill">Learning-Based Robotics</div>             
               <div class="skills__skill">Gazebo Simulation</div>
-              <div class="skills__skill">Gazebo Simulation</div>
 
               <div class="skills__skill">SolidWorks</div>              
               <div class="skills__skill">Electronics & Hardware Design</div>
@@ -210,7 +210,7 @@
               A ROS2 system for controlling a robot arm through real-time
               hand gesture recognition using MediaPipe and a standard webcam.
             </p>
-            <a href="./projects/project-teleop.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Project</a>
+            <a href="./projects/project-teleop.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
  
@@ -219,18 +219,18 @@
           <div class="projects__row-img-cont">
             <img
               src="./assets/jpeg/hive.jpeg"
-              alt="Mobile Robot for GOH handling"
+              alt="Mobile Robot for GOH Handling"
               class="projects__row-img"
               loading="lazy"
             />
           </div>
           <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Mobile Robot for GOH handling</h3>
+            <h3 class="projects__row-content-title">Mobile Robot for GOH Handling</h3>
             <p class="projects__row-content-desc">
               Mechanical, electrical, and system-integration work on
               a mobile robot for Garment-on-Hanger (GOH) automation.
             </p>
-            <a href="./projects/project-hive.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Project</a>
+            <a href="./projects/project-hive.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
  
@@ -245,12 +245,12 @@
             />
           </div>
           <div class="projects__row-content">
-            <h3 class="projects__row-content-title">VLA-based robotic arm for GOH handling</h3>
+            <h3 class="projects__row-content-title">VLA-Based Robotic Arm for GOH Handling</h3>
             <p class="projects__row-content-desc">
               Development of a robotic arm for Garment-on-Hanger (GOH) automation
               using a vision-language-action (VLA) model and Hugging Face's VLA models.
             </p>
-            <a href="./projects/project-tensi.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Project</a>
+            <a href="./projects/project-tensi.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
  
@@ -270,7 +270,7 @@
               Designed soft robotic actuators and implemented C#/C++ control systems,
               integrating NDI sensors and haptic teleoperation (Omega.3).
             </p>
-            <a href="./projects/project-soft_robot.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Project</a>
+            <a href="./projects/project-soft_robot.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
  
@@ -290,13 +290,20 @@
               Designed a cable-driven art robot using SolidWorks, custom PCBs, and ESP32 firmware.
               Implemented force-controlled artistic motion control.
             </p>
-            <a href="./projects/project-kamal.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">View Project</a>
+            <a href="./projects/project-kamal.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
 
 
           
         </div>
+      </div>
+    </section>
+
+    <section id="cad" class="cad sec-pad" aria-labelledby="cad-heading">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med"><span id="cad-heading" class="heading-sec__main">CAD Models</span><span class="heading-sec__sub">Selected parts and printable models. Download the STL for printing or the SolidWorks file to inspect the design.</span></h2>
+        <div class="cad__grid"><article class="cad__card"><img src="./assets/cad/previews/cable-holder.svg" alt="3D preview of Cable Holder" loading="lazy"><div class="cad__body"><h3>Cable Holder</h3><p>A compact part designed to route and retain a cable.</p><div class="cad__links"><a href="./assets/cad/models/Cable Holder.STL" download>Download STL</a><a href="./assets/cad/models/Cable Holder.SLDPRT" download>Download SolidWorks</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/tesla.svg" alt="3D preview of Tesla" loading="lazy"><div class="cad__body"><h3>Tesla</h3><p>A Tesla themed 3D model prepared for printing.</p><div class="cad__links"><a href="./assets/cad/models/Tesla.STL" download>Download STL</a><a href="./assets/cad/models/Tesla.SLDPRT" download>Download SolidWorks</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/mop-holder.svg" alt="3D preview of Mop Holder" loading="lazy"><div class="cad__body"><h3>Mop Holder</h3><p>A wall mounted holder for storing a mop.</p><div class="cad__links"><a href="./assets/cad/models/mop_holder.STL" download>Download STL</a><a href="./assets/cad/models/mop_holder.SLDPRT" download>Download SolidWorks</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/shower-curtain-holder.svg" alt="3D preview of Shower Curtain Holder" loading="lazy"><div class="cad__body"><h3>Shower Curtain Holder</h3><p>A support part for a shower curtain installation.</p><div class="cad__links"><a href="./assets/cad/models/shower_curtain.STL" download>Download STL</a><a href="./assets/cad/models/shower_curtain.SLDPRT" download>Download SolidWorks</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/shower-curtain-glass-part.svg" alt="3D preview of Shower Curtain Glass Part" loading="lazy"><div class="cad__body"><h3>Shower Curtain Glass Part</h3><p>A companion part for the shower curtain glass.</p><div class="cad__links"><a href="./assets/cad/models/shower_curtain_glass.STL" download>Download STL</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/fixer.svg" alt="3D preview of Fixer" loading="lazy"><div class="cad__body"><h3>Fixer</h3><p>A small fixing component for a mechanical assembly.</p><div class="cad__links"><a href="./assets/cad/models/fixer.STL" download>Download STL</a><a href="./assets/cad/models/fixer.SLDPRT" download>Download SolidWorks</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/m6-screw.svg" alt="3D preview of M6 Screw" loading="lazy"><div class="cad__body"><h3>M6 Screw</h3><p>An M6 screw model for a mechanical assembly.</p><div class="cad__links"><a href="./assets/cad/models/M6X2.0 Screw.STL" download>Download STL</a><a href="./assets/cad/models/M6.SLDPRT" download>Download SolidWorks</a></div></div></article><article class="cad__card"><img src="./assets/cad/previews/cn-tower.svg" alt="3D preview of CN Tower" loading="lazy"><div class="cad__body"><h3>CN Tower</h3><p>A printable model of the CN Tower.</p><div class="cad__links"><a href="./assets/cad/models/CN_Tower.stl" download>Download STL</a></div></div></article><article class="cad__card"><div class="cad__placeholder" aria-hidden="true">3D CAD</div><div class="cad__body"><h3>Webcam Holder</h3><p>A mounting part for a webcam; SolidWorks source file available.</p><div class="cad__links"><a href="./assets/cad/models/holder_webcams.SLDPRT" download>Download SolidWorks</a></div></div></article></div>
       </div>
     </section>
 
@@ -318,15 +325,15 @@
 
           <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
             <a href="https://www.linkedin.com/in/alirezazahedi79/"
-               target="_blank"
+               target="_blank" rel="noopener noreferrer"
                class="btn btn--med btn--theme-inv"
-               style="min-width: 160px;">
+               style="min-width: 160px;" aria-label="LinkedIn">
               LinkedIn
             </a>
             <a href="https://github.com/zahedialireza79"
-               target="_blank"
+               target="_blank" rel="noopener noreferrer"
                class="btn btn--med btn--theme-inv"
-               style="min-width: 160px;">
+               style="min-width: 160px;" aria-label="GitHub">
               GitHub
             </a>
           </div>
@@ -342,8 +349,8 @@
             <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
 
             <div class="main-footer__social-cont">
-              <a href="#"><img class="main-footer__icon" src="./assets/png/linkedin-ico.png" /></a>
-              <a href="#"><img class="main-footer__icon" src="./assets/png/github-ico.png" /></a>
+              <a href="https://www.linkedin.com/in/alirezazahedi79/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="" /></a>
+              <a href="https://github.com/zahedialireza79" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img class="main-footer__icon" src="./assets/png/github-ico.png" alt="" /></a>
             </div>
           </div>
 

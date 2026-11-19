@@ -1,38 +1,25 @@
-// ---
-const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
+const menuButton = document.querySelector('.header__main-ham-menu-cont')
 const smallMenu = document.querySelector('.header__sm-menu')
-const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
-const headerHamMenuCloseBtn = document.querySelector(
-  '.header__main-ham-menu-close'
-)
-const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+const openIcon = document.querySelector('.header__main-ham-menu')
+const closeIcon = document.querySelector('.header__main-ham-menu-close')
 
-hamMenuBtn.addEventListener('click', () => {
-  if (smallMenu.classList.contains('header__sm-menu--active')) {
-    smallMenu.classList.remove('header__sm-menu--active')
-  } else {
-    smallMenu.classList.add('header__sm-menu--active')
-  }
-  if (headerHamMenuBtn.classList.contains('d-none')) {
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  } else {
-    headerHamMenuBtn.classList.add('d-none')
-    headerHamMenuCloseBtn.classList.remove('d-none')
-  }
-})
-
-for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-  headerSmallMenuLinks[i].addEventListener('click', () => {
-    smallMenu.classList.remove('header__sm-menu--active')
-    headerHamMenuBtn.classList.remove('d-none')
-    headerHamMenuCloseBtn.classList.add('d-none')
-  })
+function setMenuOpen(open) {
+  smallMenu.classList.toggle('header__sm-menu--active', open)
+  openIcon.classList.toggle('d-none', open)
+  closeIcon.classList.toggle('d-none', !open)
+  menuButton.setAttribute('aria-expanded', String(open))
+  menuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu')
 }
 
-// ---
-const headerLogoConatiner = document.querySelector('.header__logo-container')
-
-headerLogoConatiner.addEventListener('click', () => {
-  location.href = 'index.html'
+menuButton.addEventListener('click', () => {
+  setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true')
+})
+smallMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => setMenuOpen(false))
+})
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+    setMenuOpen(false)
+    menuButton.focus()
+  }
 })
